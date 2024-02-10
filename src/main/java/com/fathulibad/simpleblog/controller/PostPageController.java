@@ -15,7 +15,7 @@ public class PostPageController {
 	
 	@RequestMapping("/page/detail/{id}")
 	public String getDetailPage(@PathVariable("id") int id, Model model) {
-		model.addAttribute("id", 1);
+		model.addAttribute("id", id);
 		return "detail";
 	}
 
