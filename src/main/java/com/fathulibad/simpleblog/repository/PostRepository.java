@@ -29,5 +29,5 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 	@Query("SELECT p FROM Post p WHERE content LIKE %:query%")
     public List <Post> findPostLikeContent(
 		@Param("query") String query);
-
+	
 }

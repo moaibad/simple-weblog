@@ -80,7 +80,7 @@ $(document).ready(function(){
 		console.log(comment);
 		
 		var param = {
-				postId: postId,
+				post_id: postId,
 				user: user,
 				comment: comment
 		}
